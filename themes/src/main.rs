@@ -7,6 +7,8 @@ pub fn main() -> iced::Result {
 
 struct Counter {
     value: i32,
+
+    theme: Theme,
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -19,7 +21,13 @@ impl Sandbox for Counter {
     type Message = Message;
 
     fn new() -> Self {
-        Self { value: 0 }
+        Self {
+            value: 0,
+            theme: match dark_light::detect() {
+                dark_light::Mode::Dark => Theme::Dark,
+                dark_light::Mode::Light => Theme::Light,
+            },
+        }
     }
 
     fn title(&self) -> String {
@@ -49,6 +57,6 @@ impl Sandbox for Counter {
     }
 
     fn theme(&self) -> Theme {
-        Theme::Dark
+        self.theme
     }
 }

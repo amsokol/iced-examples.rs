@@ -1,3 +1,3 @@
 ﻿[workspace]
 resolver = "2"
-members = ["themes", "native_dialog"]
+members = ["themes", "native_dialog", "system_information"]

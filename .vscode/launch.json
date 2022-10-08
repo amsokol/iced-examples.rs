@@ -1,0 +1,119 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'themes'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=themes",
+                    "--package=themes"
+                ],
+                "filter": {
+                    "name": "themes",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'themes'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=themes",
+                    "--package=themes"
+                ],
+                "filter": {
+                    "name": "themes",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'native_dialog'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=native_dialog",
+                    "--package=native_dialog"
+                ],
+                "filter": {
+                    "name": "native_dialog",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'native_dialog'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=native_dialog",
+                    "--package=native_dialog"
+                ],
+                "filter": {
+                    "name": "native_dialog",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'system_information'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=system_information",
+                    "--package=system_information"
+                ],
+                "filter": {
+                    "name": "system_information",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'system_information'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=system_information",
+                    "--package=system_information"
+                ],
+                "filter": {
+                    "name": "system_information",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
